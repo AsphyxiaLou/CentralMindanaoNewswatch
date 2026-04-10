@@ -59,7 +59,7 @@ cenmin-news/
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/cenmin-news.git
+git clone https://github.com/AsphyxiaLou/CentralMindanaoNewswatch.git
 ```
 
 2. Open `index.html` in your browser
@@ -69,12 +69,6 @@ git clone https://github.com/yourusername/cenmin-news.git
 ## 🌍 Deployment
 
 This project is deployed using **GitHub Pages**.
-
----
-
-## 📸 Preview
-
-(Add screenshot here)
 
 ---
 
