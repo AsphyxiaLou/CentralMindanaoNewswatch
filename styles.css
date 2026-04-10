@@ -301,6 +301,13 @@ nav a:hover::after {
     text-align: center;
 }
 
+.about p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #1e293b;
+}
+
 /* ✅ DOWNLOAD FIX */
 .download {
     display: flex;
