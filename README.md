@@ -7,7 +7,7 @@ This website allows users to explore features and download the APK directly.
 
 ## 🌐 Live Demo
 
-👉 https://yourusername.github.io/cenmin-news/
+👉 https://asphyxialou.github.io/CentralMindanaoNewswatch/
 
 ---
 
