@@ -315,12 +315,25 @@ nav a:hover::after {
     width: 180px;
     height: 360px;
     margin: 0 auto 15px;
-    border-radius: 25px;
-    overflow: hidden; /* ✅ must be here */
-    position: relative; /* ✅ required */
+    border-radius: 30px;
+    background: #111;
+    padding: 8px;
+    position: relative;
+    overflow: hidden; /* outer clip */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.phone-frame::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 6px;
     background: #000;
-    padding: 6px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    z-index: 2;
 }
 
 /* screen inside phone */
@@ -336,19 +349,20 @@ nav a:hover::after {
 .phone-screen {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    overflow: hidden; /* ✅ double clipping */
+    border-radius: 22px;
+    overflow: hidden; /* inner clip */
+    background: #000;
 }
 
 .phone-screen img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* 👈 prevents cutting bottom */
     transition: transform 0.3s ease;
 }
 
 .card:hover .phone-screen img {
-    transform: scale(1.05);
+    transform: scale(1.03); /* smaller = safer */
 }
 
 .card:hover .phone-frame {
