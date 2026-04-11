@@ -52,10 +52,18 @@ header.scrolled {
     align-items: center;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 100px; /* increase this */
+    padding: 10px 40px;
+}
+
 .logo-img {
-    height: clamp(50px, 8vw, 90px);
+    height: clamp(60px, 6vw, 90px);
     width: auto;
-    filter: drop-shadow(0 0 8px rgba(255, 213, 0, 0.6));
+    display: block;
+    max-height: none;
 }
 
 /* NAV */
