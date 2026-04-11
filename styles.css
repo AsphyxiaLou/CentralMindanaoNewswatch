@@ -52,7 +52,11 @@ header.scrolled {
     align-items: center;
 }
 
-.logo-img { height: 55px; }
+.logo-img {
+    height: clamp(50px, 8vw, 90px);
+    width: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 213, 0, 0.6));
+}
 
 /* NAV */
 nav a {
