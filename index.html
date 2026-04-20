@@ -175,6 +175,19 @@ window.addEventListener("scroll", () => {
     });
 });
 
+document.querySelectorAll('.js-scroll').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const targetId = this.getAttribute('href');
+    if (targetId && targetId.startsWith('#')) {
+      e.preventDefault();
+      const el = document.querySelector(targetId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+
 </script>
 
 </body>
