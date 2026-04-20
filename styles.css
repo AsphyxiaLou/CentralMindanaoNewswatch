@@ -108,6 +108,7 @@ nav a:hover::after {
 
 .hero-left {
     flex: 1;
+    max-width: 520px;
 }
 
 .hero-right {
@@ -118,12 +119,16 @@ nav a:hover::after {
 
 .slogan {
     color: #1e293b;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    opacity: 0.9;
 }
 
 .hero h1 {
     font-size: 52px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .hero span {
@@ -132,13 +137,32 @@ nav a:hover::after {
 
 .desc {
     color: #334155;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
+    max-width: 460px;
+}
+
+.hero-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    color: #e2f3ff;
+    font-size: 0.9rem;
+}
+
+.hero-features li {
+    margin-bottom: 4px;
+}
+
+.hero-note {
+    font-size: 0.8rem;
+    color: rgba(226, 239, 255, 0.85);
 }
 
 /* BUTTONS */
 .buttons {
     display: flex;
     gap: 15px;
+    margin-bottom: 6px;
 }
 
 .btn {
