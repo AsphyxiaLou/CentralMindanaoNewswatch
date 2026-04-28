@@ -430,6 +430,53 @@ nav a:hover::after {
     color: #1e293b;
 }
 
+.team {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: #fff;
+    padding: 20px;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.team-card h3 {
+    margin: 10px 0 5px;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
 /* ✅ DOWNLOAD FIX */
 .download {
     display: flex;
