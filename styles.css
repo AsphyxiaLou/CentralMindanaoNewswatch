@@ -430,13 +430,13 @@ nav a:hover::after {
     color: #1e293b;
 }
 
-.team {
-    padding: 60px 20px;
-    text-align: center;
+/* TEAM inside ABOUT */
+.team-wrapper {
+    margin-top: 60px;
 }
 
-.team h2 {
-    font-size: 2rem;
+.team-title {
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -447,34 +447,67 @@ nav a:hover::after {
     flex-wrap: wrap;
 }
 
+/* CLEAN CARD */
 .team-card {
     background: #fff;
     padding: 20px;
-    width: 220px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    width: 240px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* equal height fix */
 }
 
-.team-card:hover {
-    transform: translateY(-5px);
+/* IMAGE FIX */
+.team-card {
+    width: 240px;
+    padding: 20px;
+    border-radius: 18px;
+
+    /* GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    /* SOFT SHADOW */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s ease;
 }
 
-.team-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
+/* TEXT CLEANUP */
 .team-card h3 {
-    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #0f172a;
 }
 
-.team-card p {
+.team-card .role {
     font-size: 0.9rem;
-    color: #555;
+    font-weight: 500;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.team-card .email {
+    font-size: 0.85rem;
+    color: #334155;
+    word-break: break-all; /* fixes long email overflow */
+}
+.team-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* ✅ DOWNLOAD FIX */
