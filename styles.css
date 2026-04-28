@@ -518,6 +518,7 @@ nav a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .download h2 {
@@ -555,36 +556,52 @@ nav a:hover::after {
 }
 
 .specs {
-    margin-top: 30px;
-    padding: 25px;
-    border-radius: 18px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.spec-box {
+    display: flex;
+    gap: 40px;
+    padding: 30px 40px;
+    border-radius: 20px;
 
     background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
     border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.spec-column {
+    flex: 1;
     text-align: left;
 }
 
-.specs h3 {
-    margin-top: 15px;
+.spec-column h3 {
     margin-bottom: 10px;
 }
 
-.spec-list {
+.spec-column ul {
     list-style: none;
     padding: 0;
 }
 
-.spec-list li {
+.spec-column li {
     margin-bottom: 8px;
     font-size: 0.95rem;
     color: #1e293b;
+}
+
+.spec-column li::before {
+    content: "• ";
+    color: #facc15; /* matches your yellow button */
+    font-weight: bold;
 }
 
 /* SCROLL TOP */
@@ -683,5 +700,17 @@ nav a:hover::after {
 
     .desc {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spec-box {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .spec-column {
+        text-align: center;
     }
 }
