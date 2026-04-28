@@ -554,6 +554,39 @@ nav a:hover::after {
     transform: scale(0.95);
 }
 
+.specs {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.specs h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.spec-list {
+    list-style: none;
+    padding: 0;
+}
+
+.spec-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #1e293b;
+}
+
 /* SCROLL TOP */
 #topBtn {
     position: fixed;
